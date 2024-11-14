@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: master
-        image: bitnami/redis:6.0.13  # Зафиксированная версия образа
+        image: bitnami/redis:6.0.13
         env:
-         - name: ALLOW_EMPTY_PASSWORD  # Установка переменной окружения для запуска без пароля
+         - name: ALLOW_EMPTY_PASSWORD
            value: "yes"
         ports:
         - containerPort: 6379
